@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #F5E3CF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .loader-text img{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 1.5s infinite;
+            height: 30%;
+            width: 65%;
+        }
+
+        .loader-line {
+            width: 70%;
+            height: 10px;
+            border-radius: 30px;
+            background-color: #ffffff;
+        }
+
+        .line {
+            height: 100%;
+            background-color: #411C0E;
+            box-shadow: 0 0 10px #411C0E;
+            border-radius: 30px;
+            animation: loading 2s forwards ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader-text">
+            <img src="logo.png" width="200" height="200">
+        </div>
+
+        <div class="loader-line">
+            <div class="line"></div>
+        </div>
+    </div>
+</body>
+
+</html>
