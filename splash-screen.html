@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #411C0E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splash-dot {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #F5E3CF;
+            border-radius: 50%;
+            animation: dot 0.5s linear 0.1s 1 normal;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes dot {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(310px);
+                visibility: hidden;
+            }
+        }
+
+        .splash-dot2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #F5E3CF;
+            border-radius: 50%;
+            visibility: hidden;
+            animation: dot2 1s linear 0.6s 1 normal;
+            animation-fill-mode: forwards;
+            
+        }
+
+        @keyframes dot2 {
+            0% {
+                transform: translateY(0);
+                visibility: visible;
+            }
+            100% {
+                transform: scale(100);
+                background-color: #F5E3CF;
+                visibility: visible;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="splash-dot"></div>
+        <div class="splash-dot2"></div>
+    </div>
+</body>
+</html>
