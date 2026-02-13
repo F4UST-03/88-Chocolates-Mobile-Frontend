@@ -26,7 +26,7 @@
             top: 37%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation: pulse 1.5s infinite;
+            
             height: 250px;
             width: 250px;
         }
@@ -43,14 +43,20 @@
             background-color: #411C0E;
             box-shadow: 0 0 10px #411C0E;
             border-radius: 30px;
-            animation: loading 2s forwards ease-in-out infinite;
+            animation: loading 7s forwards ease-in-out infinite;
         }
 
         @keyframes loading {
             0% {
                 width: 0%;
             }
+            25% {
+                width: 30%;
+            }
             50% {
+                width: 65%;
+            }
+            75% {
                 width: 100%;
             }
             100% {
@@ -60,17 +66,14 @@
 
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="loader-text">
-            <img src="logo.png" width="200" height="200">
+            <img src="assets/88 Logo.png" alt="88 Chocolates Logo">
         </div>
-
         <div class="loader-line">
             <div class="line"></div>
         </div>
     </div>
 </body>
-
 </html>
