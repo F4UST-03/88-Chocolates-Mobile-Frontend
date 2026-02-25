@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>88 Chocolates - Homepage</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --choco-dark: #411C0E;
+            --choco-mid: #5b2f26;
+            --choco-light: #f1dfcf;
+            --accent: #FFEDD9;
+            --input-bg: #ffffff;
+            --muted: #8a6f67;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--choco-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .welcome {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-top: 5%;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            padding: 15px;
+            background-color: var(--accent);
+            color: var(--choco-dark);
+            font-weight: bold;
+            border: 2px solid var(--choco-dark);
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .stat {
+            background-color: white;
+            border: 1px solid var(--choco-dark);
+            border-radius: 8px;
+            padding: 15px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .date-picker {
+            margin: 20px 0;
+            text-align: right;
+        }
+
+        .date-picker input {
+            padding: 2px;
+            border: 1px solid var(--choco-dark);
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">WELCOME, [USERNAME]!</div>
+
+        <a href="#" class="button">MAKE A TRANSACTION</a>
+        <a href="#" class="button">MAKE AN INVENTORY</a>
+
+        <div class="date-picker">
+            <input type="date" value="2026-01-01">
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>100</h3>
+                <p>Customer Count</p>
+            </div>
+            <div class="stat">
+                <h3>200</h3>
+                <p>Revenue</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
